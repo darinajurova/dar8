@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 90vw;
+    margin: 50px auto;
+    display: flex;
+}
+
+menu {
+    background-color: #4d4d4d;
+    width: 20vw;
+}
+
+.Logo {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    display: block;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+li {
+    color: #ffffff;
+    border-top: 1px solid #333333;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.main-box {
+    background-color: #dddddd;
+    padding: 30px;
+    width: 75vw;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.diagrams {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.diagram-item {
+    width: 30vw;
+    background-color: #efefef;
+    padding: 30px;
+}
+
+figcaption {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.diagram-image {
+    width: 15vw;
+    display: block;
+    margin: auto;
+}
+
+.table-container {
+    background-color: #efefef;
+    padding: 30px;
+}
+
+.content {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+th {
+    text-align: left;
+}
+
+td,th {
+    border-bottom: 1px solid #d4d2d2;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    menu, .main-box, .diagrams, .diagram-item {
+        width: 100%;
+    }
+    .diagrams {
+        flex-direction: column;
+    }
+    .diagram-image {
+        width: 50%;
+    }
+    .diagram-item:first-child {
+        margin-bottom: 20px;
+    }
+
+}
